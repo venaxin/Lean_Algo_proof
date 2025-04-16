@@ -1,0 +1,22 @@
+name = "insertion_sort"
+version = "0.1.0"
+defaultTargets = ["insertion_sort"]
+
+# filepath: /Users/abdulrahman/Documents/GitHub/Lean_Algo_proof/insertion_sort/lakefile.toml
+
+[package]
+name = "insertion_sort"
+
+[[lean_lib]]
+name = "InsertionSort"
+
+[[lean_exe]]
+name = "insertion_sort"
+root = "Main"
+
+[[require]]
+name = "mathlib"
+scope = "leanprover-community"
+
+[dependencies]
+mathlib = { git = "https://github.com/leanprover-community/mathlib4" }
